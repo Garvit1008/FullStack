@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="myfunction()">Click it!!!</button>
+<script>
+    const calcage = function (birthyear){ 
+       return 2023 - birthyear;
+    }
+    const retirement = function(name,birthyear){
+        const age= calcage(birthyear);
+        const re = 60-age;
+        console.log(` ${name} will retire after ${re}` );
+    }
+ retirement('garvit',2003);
+</script>
+</body>
+</html>
